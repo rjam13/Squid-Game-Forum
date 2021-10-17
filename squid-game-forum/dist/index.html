@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Squid Game Forum</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<container class="container">
+  
+  <header>
+    <h1 id="title">Squid Game Entry</h1>
+    <p id="description">Equal and fair opportunity to absolve your debt and struggles.</p>
+  </header>
+  
+  <form id="survey-form">
+    <div class="form-group">
+      <label id="name-label" for="name">Name:</label>
+      <input type="text" 
+             name="name"
+             id="name"
+             class="form-control"
+             placeholder="Enter name"
+             required>
+    </div>
+    <div class="form-group">
+      <label id="email-label" for="email">Email:</label>
+      <input type="email" 
+             name="email"
+             id="email"
+             class="form-control"
+             placeholder="Enter email"
+             required>
+    </div>
+    <div class="form-group">
+      <label id="number-label" for="number">Estimated debt owed:</label>
+      <input type="number" 
+             name="number"
+             id="number"
+             min="0"
+             max="100000000"
+             class="form-control"
+             placeholder="Enter in USD">
+    </div>
+    <div class="form-group">
+      <label id="dropdown-label" for="dropdown">Do you have a job?</label>
+      <br>
+      <select id="dropdown" name="occupation" class="form-control" required>
+        <option disabled selected value>Select current occupation</option>
+        <option value="student">unemployed</option>
+        <option value="job">employed</option>
+        <option value="learner">student</option>
+        <option value="preferNo">Prefer not to say</option>
+        <option value="other">Other</option>
+      </select>
+    </div>
+    
+    <div class="form-group">
+      <label>How desperate are you for money?</label>
+      <br>
+      <label id="radio-label" for="verydesperate">
+        <input  name="desperation"
+                id="verydesperate"
+                value="Very desperate"
+                type="radio"
+                class="input-radio"
+                checked>
+      Very desperate</label>
+      <br>
+      <label id="radio-label" for="desperate">
+        <input  name="desperation"
+                id="desperate"
+                value="Desperate"
+                type="radio"
+                class="input-radio">
+      Desperate</label>
+      <br>
+      <label id="radio-label" for="neutral">
+        <input  name="desperation"
+                id="neutral"
+                value="Neutral"
+                type="radio"
+                class="input-radio">
+      Neutral</label>
+      <br>
+      <label id="radio-label" for="notdesperate">
+        <input  name="desperation"
+                id="notdesperate"
+                value="Not desperate"
+                type="radio"
+                class="input-radio">
+      Not desperate</label>
+      <br>
+      <label id="radio-label" for="notverydesperate">
+        <input  name="desperation"
+                id="notverydesperate"
+                value="Not very desperate"
+                type="radio"
+                class="input-radio">
+      Not very desperate</label>
+    </div>
+    
+    <div id="checkboxes" class="form-group">
+      <label>Select the options below that apply to your current situation</label>
+      <br>
+      <label id=".checkbox-label" for="456">
+        <input name="status"
+               id="456"
+               value="456"
+               type="checkbox"
+               class="input-checkbox">
+      I am a divorced father that owe almost a million dollars to scary criminal groups, bet horses for a living, and have a dying mother.</label>
+      <br>
+      <label id=".checkbox-label" for="218">
+        <input name="status"
+               id="218"
+               value="218"
+               type="checkbox"
+               class="input-checkbox">
+      I was a once successful student at Seoul National University but now I am a criminal riddled with millions of dollars owed to various families for horrible financial decisions.</label>
+    <br>
+      <label id=".checkbox-label" for="067">
+        <input name="status"
+               id="067"
+               value="067"
+               type="checkbox"
+               class="input-checkbox">
+      I have recently defected from North Korea with my younger brother and am looking for money in taking my mother out of North Korea.</label>
+    <br>
+      <label id=".checkbox-label" for="199">
+        <input name="status"
+               id="199"
+               value="199"
+               type="checkbox"
+               class="input-checkbox">
+      I am a pakistani immigrant that lives in South Korea to make a living but due long over due payments from my boss, I have become very poor and unable to leave the country.</label>
+    <br>
+      <label id=".checkbox-label" for="101">
+        <input name="status"
+               id="101"
+               value="101"
+               type="checkbox"
+               class="input-checkbox">
+      I am a gang member that owe millions of dollars to a mafia gang overseas so that they would not kill me.</label>
+    <br>
+      <label id=".checkbox-label" for="001">
+        <input name="status"
+               id="001"
+               value="001"
+               type="checkbox"
+               class="input-checkbox">
+      I am an old man with a brain tumor and hoping to make my last few days in doing something thrilling and fun that reminds me of my younger years being a child.</label>      
+    </div>
+    
+    <div class="form-group">
+      <label for="">Is there anything else you would like to let us know about?</label>
+      <textarea id="comments" class="textarea" name="comments"></textarea>
+    </div>
+    
+    <div class="form-group">
+      <button type="submit" id="submit" class="submit-button">
+        Submit
+      </button>
+    </div>
+    
+  </form>
+  
+</container>
+<!-- partial -->
+  <script src='https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>

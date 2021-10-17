@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+html {
+  font-size: 10px;
+  font-family: 'Montserrat';
+  /* setting the backround image */
+  background: url(https://geekculture.co/wp-content/uploads/2021/10/squid-game-background-2.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+body {
+    color: white;
+    font-size: 1.6rem;
+}
+
+input,
+button,
+select,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+#title {
+  text-shadow: 2px 2px 4px #FF9AA2;
+  font-size: 4rem;
+  text-align: center;
+  margin: 30px auto 10px;
+}
+
+#description {
+  text-shadow: 2px 2px 4px black;
+  font-size: 1.8rem;
+  text-align: center;
+  margin: 0px auto 20px;
+}
+
+#survey-form {
+  background: rgb(0, 0, 0, 0.5);
+  padding: 1.25rem 0.5rem;
+  border-radius: 0.25rem;
+  margin: 0px auto;
+}
+
+/* when the content area is 480px wide, make padding this */
+@media (min-width: 480px) {
+  #survey-form {
+    padding: 2rem;
+  }
+}
+
+@media (min-width: 576px) {
+  #survey-form {
+    max-width: 580px;
+  }
+}
+
+@media (min-width: 768px) {
+  .form-group {
+    max-width: 720px;
+  }
+}
+
+.form-group {
+  margin: 1.25rem;
+  padding: 1rem;  
+}
+
+label {
+  font-size: 1.6rem;
+}
+.form-control {
+  display: block;
+  width: 100%;
+  height: 4rem;
+  border-radius: 5px;
+  border: 1px solid #a7bed3;
+  margin: 0.2rem 0rem;
+  padding: 0.375rem 0.75rem;
+  box-sizing: border-box;
+}
+
+.input-radio,
+.radio-label,
+.input-checkbox,
+.checkbox-label {
+  font-size: 1.6rem;
+  display: inline-block;
+  margin-right: 0.625rem;
+  margin-top: 1.25rem;
+}
+
+#checkboxes {
+    background: rgb(0, 0, 0, 0.8);
+    border-radius: 0.5rem;
+}
+
+.textarea {
+  margin-top: 1rem;
+  width: 100%;
+  min-height: 10rem;
+  padding: 0.75rem;
+  box-sizing: border-box;
+  border-radius: 0.25rem;
+  resize: vertical;
+}
+
+.submit-button {
+  width: 100%;
+  height: 50px;
+  background: #B5EAD7;
+  color: black;
+  border: none;
+  border-radius: 0.5rem;
+}
